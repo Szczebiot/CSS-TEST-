@@ -10,10 +10,25 @@ body {
 	background-color: #333;
 	font-size: 36px;
 }
-hr {
-	margin: 36px 0;
+
+div p {
+
+	color: tomato;
 }
 
-div ~ p {
-	color: lime;
+.child > p  {
+
+	font-weight: bold;
+	text-decoration: line-through;
+}
+
+#test ~ div {
+
+	background-color:royalblue;
+
+}
+
+main + p {
+
+	text-transform: uppercase;
 }
