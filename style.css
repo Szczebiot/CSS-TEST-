@@ -11,17 +11,10 @@ body {
 	font-size: 36px;
 }
 
-.square {
+a {
+	color: white;
 
-	width: 600px;
-	height: 300px;
-	background-color: royalblue;
-
-	/* border: 10px solid gold; */
-	 border-top-left-radius: 30px;
-	 border-bottom-right-radius: 30px;
+	text-decoration: none;
 }
-
-
 
 
