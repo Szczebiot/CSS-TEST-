@@ -12,6 +12,10 @@ body {
 	font-size: 36px;
 }
 
+main {
+	margin-top: 200px;
+}
+
 div {
 	margin: 0 auto;
 	height: 200px;
@@ -20,26 +24,24 @@ div {
 }
 
 .red {
-	margin-top: 200px;
-	left:100px;
 	background-color: tomato;
-	position: relative;
-	z-index: 100; 
 }
 
 .blue {
+	position: relative;
 	margin: 20px auto;
 	background-color: royalblue;
-	position: relative;
-	top: -100px; 
-	left: 60px; 
-	z-index: 101; 
-	
 }
 
 .green {
 	background-color: greenyellow;
-	position: relative;
-	top: -200px;
-	z-index:102;
+}
+
+.gold {
+	position: absolute;
+	left: 477px; 
+	margin: 0;
+	width: 120px;
+	height: 120px;
+	background-color: gold;
 }
