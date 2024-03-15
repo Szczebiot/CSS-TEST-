@@ -5,68 +5,89 @@
 }
 
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: "Nunito", sans-serif;
 	background-color: #333;
 	color: white;
 	font-size: 36px;
 }
 
-.bg {
-	width: 100vw;
-	height: 100vh;
-	background-color: #ddd;
-	transition: 0.3s;
+button {
+	position: absolute;
+	top: 50px;
+	width: 120px;
+	padding: 10px 30px;
+	background: none;
+	color: white;
+	font-weight: bold;
+	border: 3px solid white;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	transform: translateX(-50%);
+	font-family: "Nunito", sans-serif;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+button:hover {
+	background-color: #fff;
+	color: #333;
+}
+.btn-zoom {
+	left: 30%;
+}
+
+.btn-move {
+	left: 50%;
+}
+
+.btn-color {
+	left: 70%;
 }
 
 .square {
 	position: absolute;
-	top: 50px;
-	width: 60px;
-	height: 60px;
-	border: 3px solid black;
+	top: 150px;
+	width: 100px;
+	height: 100px;
 	transform: translateX(-50%);
-	cursor: pointer;
-}
+	border-radius: 25px;
+	transition: 0.5s;
 
-.red {
-	background-color: tomato;
-	left: 40%;
+	background-color: deepskyblue;
 }
 
 .blue {
-	background-color: royalblue;
-	left: 20%;
+	left: 30%;
+	background-color: rgb(96, 78, 214);
+	box-shadow: 0 0 15px rgb(96, 78, 214);
+	border: 2px solid rgb(59, 37, 207);
+}
+
+.red {
+	left: 50%;
+	background-color: #ed4251;
+	box-shadow: 0 0 15px#ed4251;
+	border: 2px solid #e41628;
 }
 
 .green {
-	background-color: greenyellow;
-	left: 60%;
+	left: 70%;
+	background-color: #2fda62;
+	box-shadow: 0 0 15px #2fda62;
+	border: 2px solid #04d242;
 }
 
-.gold {
-	background-color: gold;
-	left: 80%;
+.btn-zoom:hover ~ .square {
+	width: 200px;
+	height: 200px;
 }
-
-.red:hover ~ .bg {
-
-	background-color: tomato;
-
+.btn-move:hover ~ .square {
+	top: 400px;
 }
-
-.blue:hover ~ .bg {
-
-	background-color: royalblue;
+.btn-color:hover ~ .square {
 	
-}
-
-.green:hover ~ .bg {
-
-	background-color: greenyellow;
-	
-}
-
-.gold:hover ~ .bg {
-	background-color: gold;
-	
+	background-color: #333;
+	box-shadow: 0 0 15px #333;
+	border: 2px solid #ffffff;
 }
