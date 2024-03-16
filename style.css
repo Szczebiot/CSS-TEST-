@@ -12,26 +12,26 @@ body {
 }
 
 button {
+	font-family: "Nunito", sans-serif;
+	width: 120px;
 	position: absolute;
 	top: 50px;
-	width: 120px;
 	padding: 10px 30px;
+	transform: translateX(-50%);
 	background: none;
-	color: white;
+	color: #fff;
 	font-weight: bold;
-	border: 3px solid white;
+	border: 3px solid #fff;
 	border-radius: 5px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	transform: translateX(-50%);
-	font-family: "Nunito", sans-serif;
 	cursor: pointer;
-	transition: 0.5s;
 }
 
 button:hover {
-	background-color: #fff;
+	background: #fff;
 	color: #333;
+	transition: 0.5s;
 }
 .btn-zoom {
 	left: 30%;
@@ -40,7 +40,6 @@ button:hover {
 .btn-move {
 	left: 50%;
 }
-
 .btn-color {
 	left: 70%;
 }
@@ -48,46 +47,43 @@ button:hover {
 .square {
 	position: absolute;
 	top: 150px;
-	width: 100px;
-	height: 100px;
 	transform: translateX(-50%);
+	height: 100px;
+	width: 100px;
 	border-radius: 25px;
-	transition: 0.5s;
-
-	background-color: deepskyblue;
 }
 
 .blue {
 	left: 30%;
-	background-color: rgb(96, 78, 214);
-	box-shadow: 0 0 15px rgb(96, 78, 214);
-	border: 2px solid rgb(59, 37, 207);
+	background-color: royalblue;
+	box-shadow: 0 0 15px;
+	border: 2px solid rgb(4, 59, 223);
 }
 
 .red {
 	left: 50%;
-	background-color: #ed4251;
-	box-shadow: 0 0 15px#ed4251;
-	border: 2px solid #e41628;
+	background-color: tomato;
+	box-shadow: 0 0 15px;
+	border: 2px solid rgb(247, 44, 8);
 }
-
 .green {
 	left: 70%;
-	background-color: #2fda62;
-	box-shadow: 0 0 15px #2fda62;
-	border: 2px solid #04d242;
+	background-color: yellowgreen;
+	box-shadow: 0 0 15px;
+	border: 2px solid rgb(98, 145, 3);
 }
 
 .btn-zoom:hover ~ .square {
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 }
+
 .btn-move:hover ~ .square {
-	top: 400px;
+	top: 250px;
 }
+
 .btn-color:hover ~ .square {
-	
 	background-color: #333;
-	box-shadow: 0 0 15px #333;
-	border: 2px solid #ffffff;
+	box-shadow: #333;
+	border: white;
 }
