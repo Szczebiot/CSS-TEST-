@@ -5,85 +5,27 @@
 }
 
 body {
-	font-family: "Nunito", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
+	font-family: "Nunito" "sans-serif";
 	background-color: #333;
-	color: white;
-	font-size: 36px;
-}
-
-button {
-	font-family: "Nunito", sans-serif;
-	width: 120px;
-	position: absolute;
-	top: 50px;
-	padding: 10px 30px;
-	transform: translateX(-50%);
-	background: none;
+	font-size: 24px;
 	color: #fff;
-	font-weight: bold;
-	border: 3px solid #fff;
-	border-radius: 5px;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	cursor: pointer;
-}
-
-button:hover {
-	background: #fff;
-	color: #333;
-	transition: 0.5s;
-}
-.btn-zoom {
-	left: 30%;
-}
-
-.btn-move {
-	left: 50%;
-}
-.btn-color {
-	left: 70%;
 }
 
 .square {
-	position: absolute;
-	top: 150px;
-	transform: translateX(-50%);
-	height: 100px;
-	width: 100px;
+	width: 200px;
+	height: 200px;
+	background-color: #5b8bf3;
+	border: 2px solid rgb(13, 66, 223);
+	box-shadow: 0 0 15px #5b8bf3;
 	border-radius: 25px;
+	transition: 0.5s;
 }
 
-.blue {
-	left: 30%;
-	background-color: royalblue;
-	box-shadow: 0 0 15px;
-	border: 2px solid rgb(4, 59, 223);
-}
-
-.red {
-	left: 50%;
-	background-color: tomato;
-	box-shadow: 0 0 15px;
-	border: 2px solid rgb(247, 44, 8);
-}
-.green {
-	left: 70%;
-	background-color: yellowgreen;
-	box-shadow: 0 0 15px;
-	border: 2px solid rgb(98, 145, 3);
-}
-
-.btn-zoom:hover ~ .square {
-	width: 150px;
-	height: 150px;
-}
-
-.btn-move:hover ~ .square {
-	top: 250px;
-}
-
-.btn-color:hover ~ .square {
-	background-color: #333;
-	box-shadow: #333;
-	border: white;
+.skew:hover {
+	transform: skew(45deg);
 }
