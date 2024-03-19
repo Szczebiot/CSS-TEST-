@@ -5,11 +5,6 @@
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	height: 100vh;
 	font-family: "Nunito" "sans-serif";
 	background-color: #333;
 	font-size: 24px;
@@ -17,35 +12,18 @@ body {
 }
 
 .square {
-	width: 200px;
-	height: 200px;
-	border-radius: 25px;
-	border: 3px solid #fff;
-}
-
-.square2 {
 	position: absolute;
-	width: 200px;
 	height: 200px;
+	width: 200px;
 	border-radius: 25px;
-	background-color: #4e5ffe;
-	transition: 0.3s;
+	background-color: rgb(69, 112, 243);
 
-	transform-origin: 50% 50%;
+	top: calc(50% - 100px);
+	left: calc(50% - 100px);
+
+
 	
-}
-
-.square2:hover {
-	transform: rotate(45deg);
-}
-
-.dot {
-	position: absolute;
+	/* transform: translate(-50%, -50%);
 	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	background-color: #000;
-}
+	left: 50%; */
+} */
