@@ -5,39 +5,41 @@
 }
 
 body {
-	font-family: "Nunito" "sans-serif";
+	font-family: "Nunito", "sans-serif";
 	background-color: #333;
 }
 
 div {
 	border: 2px solid black;
 	text-align: center;
-	line-height:  60px;
+	line-height: 60px;
 }
 
 .long {
 	position: absolute;
-	top: 50px;
 	left: calc(50% - 400px);
-	width: 800px;
+	top: 50px;
 	height: 60px;
+	width: 800px;
 	background-color: tomato;
-	transition: 0.3s;
+	transition: transform 0.3s, width 0.3s;
 }
 
 .long:hover {
 	transform: scale(2);
 	width: 400px;
 	left: calc(50% - 200px);
-	background-color: orange;
+	background-color: rgb(254, 129, 107);
 }
 
-.short {
+.short-size {
 	position: absolute;
-	top: 180px;
-	left: calc(50% - 150px);
 	width: 300px;
 	height: 60px;
+}
+.short {
+	top: 180px;
+	left: calc(50% - 150px);
 	border-radius: 25px;
 	background-color: royalblue;
 	transition: 1s linear;
@@ -47,26 +49,26 @@ div {
 	transform: rotate(360deg);
 }
 
+.short2,
+.short3 {
+	top: 300px;
+	border-radius: 10px;
+}
+
 .short2 {
 	position: absolute;
-	top: 300px;
-	width: 300px;
-	height: 60px;
+
 	left: calc(30% - 150px);
 	background-color: gold;
-	border-radius: 10px;
-	transition: 1s 1s ease-out;
+
+	transition: transform 1s 1s ease-out;
 }
 
 .short3 {
-	position: absolute;
-	top: 300px;
-	width: 300px;
-	height: 60px;
 	left: calc(70% - 150px);
-	background-color: greenyellow;
-	border-radius: 10px;
-	transition: 1s 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+	background-color: yellowgreen;
+
+	transition: transform 1s 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .short:hover ~ .short2 {
@@ -81,11 +83,10 @@ div {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, 50%);
-	height: 200px;
-	width: 400px;
-	transition: .3s;
+	transform: translate(-50%, -50%);
 	line-height: 200px;
+	width: 400px;
+	transition:background-color 0.3s;
 }
 
 .center:hover {
